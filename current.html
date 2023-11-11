@@ -1,0 +1,732 @@
+
+    <html>
+    <head>
+        <title>Player Analysis</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    <table border="1" class="dataframe display">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Name</th>
+      <th>Position</th>
+      <th>Nat</th>
+      <th>Age</th>
+      <th>Club</th>
+      <th>Transfer Value</th>
+      <th>Wage</th>
+      <th>Personality</th>
+      <th>Media Handling</th>
+      <th>Left Foot</th>
+      <th>Right Foot</th>
+      <th>WCB_Score</th>
+      <th>CB_Score</th>
+      <th>BPD_Score</th>
+      <th>IWD_Score</th>
+      <th>RPM_Score</th>
+      <th>DM_Score</th>
+      <th>WB_Score</th>
+      <th>IW_Score</th>
+      <th>IF_Score</th>
+      <th>CF_Score</th>
+      <th>GK_Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Corry Evans</td>
+      <td>DM, M (C)</td>
+      <td>NIR</td>
+      <td>32</td>
+      <td>Sunderland</td>
+      <td>£500K - £800K</td>
+      <td>£6,000 p/w</td>
+      <td>Fairly Professional</td>
+      <td>Reserved</td>
+      <td>Reasonable</td>
+      <td>Very Strong</td>
+      <td>11.72</td>
+      <td>11.29</td>
+      <td>11.89</td>
+      <td>12.98</td>
+      <td>12.72</td>
+      <td>13.49</td>
+      <td>28.4</td>
+      <td>8.25</td>
+      <td>9.11</td>
+      <td>9.75</td>
+      <td>10.4</td>
+    </tr>
+    <tr>
+      <td>Pierre Ekwah</td>
+      <td>DM, M (C)</td>
+      <td>FRA</td>
+      <td>21</td>
+      <td>Sunderland</td>
+      <td>£4.6M - £5.2M</td>
+      <td>£5,000 p/w</td>
+      <td>Balanced</td>
+      <td>Level-headed</td>
+      <td>Very Strong</td>
+      <td>Reasonable</td>
+      <td>11.26</td>
+      <td>10.66</td>
+      <td>11.71</td>
+      <td>11.75</td>
+      <td>12.48</td>
+      <td>12.61</td>
+      <td>31.6</td>
+      <td>8.96</td>
+      <td>9.71</td>
+      <td>10.60</td>
+      <td>8.3</td>
+    </tr>
+    <tr>
+      <td>Trai Hume</td>
+      <td>D (R), WB (RL), M (C)</td>
+      <td>NIR</td>
+      <td>21</td>
+      <td>Sunderland</td>
+      <td>£6.6M - £7.4M</td>
+      <td>£8,000 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Reasonable</td>
+      <td>Very Strong</td>
+      <td>11.44</td>
+      <td>11.48</td>
+      <td>11.66</td>
+      <td>12.01</td>
+      <td>11.95</td>
+      <td>12.84</td>
+      <td>32.5</td>
+      <td>8.61</td>
+      <td>8.83</td>
+      <td>9.70</td>
+      <td>9.4</td>
+    </tr>
+    <tr>
+      <td>Luke O'Nien</td>
+      <td>D (C), DM, M (C)</td>
+      <td>ENG</td>
+      <td>28</td>
+      <td>Sunderland</td>
+      <td>£1.8M - £3.9M</td>
+      <td>£9,000 p/w</td>
+      <td>Resolute</td>
+      <td>Level-headed</td>
+      <td>Fairly Strong</td>
+      <td>Very Strong</td>
+      <td>11.32</td>
+      <td>11.50</td>
+      <td>11.49</td>
+      <td>12.52</td>
+      <td>12.36</td>
+      <td>13.06</td>
+      <td>31.0</td>
+      <td>8.62</td>
+      <td>9.68</td>
+      <td>10.50</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td>Daniel Ballard</td>
+      <td>D (C)</td>
+      <td>NIR</td>
+      <td>23</td>
+      <td>Sunderland</td>
+      <td>£2.5M - £4.5M</td>
+      <td>£15,000 p/w</td>
+      <td>Resolute</td>
+      <td>Reserved</td>
+      <td>Reasonable</td>
+      <td>Very Strong</td>
+      <td>11.82</td>
+      <td>12.09</td>
+      <td>11.32</td>
+      <td>12.16</td>
+      <td>11.84</td>
+      <td>13.07</td>
+      <td>29.7</td>
+      <td>8.46</td>
+      <td>9.15</td>
+      <td>9.90</td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <td>Dennis Cirkin</td>
+      <td>D (LC), WB (L)</td>
+      <td>ENG</td>
+      <td>21</td>
+      <td>Sunderland</td>
+      <td>£6.2M - £8M</td>
+      <td>£10,000 p/w</td>
+      <td>Fairly Professional</td>
+      <td>Reserved</td>
+      <td>Very Strong</td>
+      <td>Weak</td>
+      <td>11.32</td>
+      <td>10.56</td>
+      <td>10.95</td>
+      <td>13.01</td>
+      <td>12.64</td>
+      <td>12.52</td>
+      <td>34.3</td>
+      <td>9.35</td>
+      <td>10.23</td>
+      <td>10.70</td>
+      <td>9.8</td>
+    </tr>
+    <tr>
+      <td>Dan Neil</td>
+      <td>DM, M/AM (C)</td>
+      <td>ENG</td>
+      <td>21</td>
+      <td>Sunderland</td>
+      <td>£7.2M - £10M</td>
+      <td>£9,000 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Fairly Strong</td>
+      <td>Very Strong</td>
+      <td>10.46</td>
+      <td>9.21</td>
+      <td>10.76</td>
+      <td>12.71</td>
+      <td>12.70</td>
+      <td>12.27</td>
+      <td>31.7</td>
+      <td>9.53</td>
+      <td>10.32</td>
+      <td>10.40</td>
+      <td>9.1</td>
+    </tr>
+    <tr>
+      <td>Aji Alese</td>
+      <td>D (LC)</td>
+      <td>ENG</td>
+      <td>22</td>
+      <td>Sunderland</td>
+      <td>£2.1M - £5.8M</td>
+      <td>£3,500 p/w</td>
+      <td>Fairly Professional</td>
+      <td>Media-friendly, Reserved</td>
+      <td>Very Strong</td>
+      <td>Reasonable</td>
+      <td>11.38</td>
+      <td>11.21</td>
+      <td>10.74</td>
+      <td>12.35</td>
+      <td>11.91</td>
+      <td>12.13</td>
+      <td>33.0</td>
+      <td>9.23</td>
+      <td>10.29</td>
+      <td>10.60</td>
+      <td>9.9</td>
+    </tr>
+    <tr>
+      <td>Jay Matete</td>
+      <td>DM, M (C)</td>
+      <td>ENG</td>
+      <td>22</td>
+      <td>Sunderland</td>
+      <td>£1.6M - £3.1M</td>
+      <td>£3,500 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Reasonable</td>
+      <td>Very Strong</td>
+      <td>10.76</td>
+      <td>9.81</td>
+      <td>10.66</td>
+      <td>12.63</td>
+      <td>12.28</td>
+      <td>12.42</td>
+      <td>30.2</td>
+      <td>9.35</td>
+      <td>10.10</td>
+      <td>9.60</td>
+      <td>7.2</td>
+    </tr>
+    <tr>
+      <td>Jenson Seelt</td>
+      <td>D (C)</td>
+      <td>NED</td>
+      <td>20</td>
+      <td>Sunderland</td>
+      <td>£10M - £12M</td>
+      <td>£6,000 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Weak</td>
+      <td>Very Strong</td>
+      <td>10.44</td>
+      <td>10.93</td>
+      <td>10.54</td>
+      <td>11.44</td>
+      <td>11.37</td>
+      <td>11.75</td>
+      <td>27.3</td>
+      <td>8.05</td>
+      <td>8.87</td>
+      <td>9.60</td>
+      <td>8.7</td>
+    </tr>
+    <tr>
+      <td>Timothée Pembélé</td>
+      <td>D (RC)</td>
+      <td>FRA</td>
+      <td>20</td>
+      <td>Sunderland</td>
+      <td>£5M - £7M</td>
+      <td>£8,000 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Reasonable</td>
+      <td>Very Strong</td>
+      <td>10.52</td>
+      <td>10.78</td>
+      <td>10.41</td>
+      <td>12.03</td>
+      <td>11.73</td>
+      <td>11.69</td>
+      <td>33.5</td>
+      <td>9.72</td>
+      <td>10.71</td>
+      <td>10.80</td>
+      <td>9.4</td>
+    </tr>
+    <tr>
+      <td>Nectar Triantis</td>
+      <td>D (C)</td>
+      <td>AUS</td>
+      <td>20</td>
+      <td>Sunderland</td>
+      <td>£4.1M - £5.8M</td>
+      <td>£2,000 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Weak</td>
+      <td>Very Strong</td>
+      <td>9.72</td>
+      <td>10.67</td>
+      <td>10.32</td>
+      <td>11.09</td>
+      <td>11.15</td>
+      <td>11.07</td>
+      <td>24.1</td>
+      <td>8.48</td>
+      <td>9.21</td>
+      <td>9.90</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>Alex Pritchard</td>
+      <td>M/AM (C)</td>
+      <td>ENG</td>
+      <td>30</td>
+      <td>Sunderland</td>
+      <td>£1.5M</td>
+      <td>£8,000 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Reasonable</td>
+      <td>Very Strong</td>
+      <td>9.42</td>
+      <td>8.41</td>
+      <td>10.09</td>
+      <td>12.36</td>
+      <td>12.57</td>
+      <td>11.15</td>
+      <td>32.3</td>
+      <td>10.52</td>
+      <td>11.50</td>
+      <td>10.95</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Bradley Dack</td>
+      <td>M/AM (C)</td>
+      <td>ENG</td>
+      <td>29</td>
+      <td>Sunderland</td>
+      <td>£3.9M - £5M</td>
+      <td>£15,000 p/w</td>
+      <td>Balanced</td>
+      <td>Level-headed</td>
+      <td>Fairly Strong</td>
+      <td>Very Strong</td>
+      <td>9.28</td>
+      <td>9.35</td>
+      <td>10.04</td>
+      <td>11.59</td>
+      <td>12.31</td>
+      <td>10.94</td>
+      <td>28.6</td>
+      <td>10.14</td>
+      <td>11.90</td>
+      <td>11.90</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td>Joe Anderson</td>
+      <td>D (LC)</td>
+      <td>ENG</td>
+      <td>22</td>
+      <td>Shrewsbury</td>
+      <td>£60K - £300K</td>
+      <td>£1,500 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Very Strong</td>
+      <td>Reasonable</td>
+      <td>9.18</td>
+      <td>9.56</td>
+      <td>10.02</td>
+      <td>10.70</td>
+      <td>10.99</td>
+      <td>10.49</td>
+      <td>24.7</td>
+      <td>8.10</td>
+      <td>9.06</td>
+      <td>9.75</td>
+      <td>8.9</td>
+    </tr>
+    <tr>
+      <td>Jobe Bellingham</td>
+      <td>DM, M (C)</td>
+      <td>ENG</td>
+      <td>17</td>
+      <td>Sunderland</td>
+      <td>£9M - £12M</td>
+      <td>£7,500 p/w</td>
+      <td>Fairly Professional</td>
+      <td>Reserved</td>
+      <td>Fairly Strong</td>
+      <td>Very Strong</td>
+      <td>9.60</td>
+      <td>9.33</td>
+      <td>9.91</td>
+      <td>11.51</td>
+      <td>11.59</td>
+      <td>10.97</td>
+      <td>29.1</td>
+      <td>9.21</td>
+      <td>10.28</td>
+      <td>10.65</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Abdoullah Ba</td>
+      <td>M (C), AM (RLC)</td>
+      <td>FRA</td>
+      <td>19</td>
+      <td>Sunderland</td>
+      <td>£7.2M - £8.8M</td>
+      <td>£4,000 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Fairly Strong</td>
+      <td>Very Strong</td>
+      <td>9.66</td>
+      <td>8.46</td>
+      <td>9.85</td>
+      <td>12.04</td>
+      <td>12.17</td>
+      <td>10.99</td>
+      <td>31.0</td>
+      <td>10.48</td>
+      <td>11.16</td>
+      <td>10.40</td>
+      <td>10.6</td>
+    </tr>
+    <tr>
+      <td>Nazariy Rusyn</td>
+      <td>AM (L), ST (C)</td>
+      <td>UKR</td>
+      <td>24</td>
+      <td>Sunderland</td>
+      <td>£2.4M - £3.4M</td>
+      <td>£10,000 p/w</td>
+      <td>Ambitious</td>
+      <td>Outspoken</td>
+      <td>Fairly Strong</td>
+      <td>Very Strong</td>
+      <td>9.74</td>
+      <td>9.56</td>
+      <td>9.53</td>
+      <td>11.33</td>
+      <td>10.97</td>
+      <td>10.88</td>
+      <td>29.4</td>
+      <td>9.26</td>
+      <td>10.71</td>
+      <td>10.90</td>
+      <td>6.7</td>
+    </tr>
+    <tr>
+      <td>Patrick Roberts</td>
+      <td>AM (RLC)</td>
+      <td>ENG</td>
+      <td>26</td>
+      <td>Sunderland</td>
+      <td>£1.4M - £2.2M</td>
+      <td>£12,000 p/w</td>
+      <td>Fairly Ambitious</td>
+      <td>Level-headed</td>
+      <td>Very Strong</td>
+      <td>Weak</td>
+      <td>9.02</td>
+      <td>7.51</td>
+      <td>9.15</td>
+      <td>11.61</td>
+      <td>11.71</td>
+      <td>9.84</td>
+      <td>31.9</td>
+      <td>11.09</td>
+      <td>12.50</td>
+      <td>11.40</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <td>Niall Huggins</td>
+      <td>D (RL)</td>
+      <td>WAL</td>
+      <td>22</td>
+      <td>Sunderland</td>
+      <td>£70K - £600K</td>
+      <td>£4,000 p/w</td>
+      <td>Fairly Ambitious</td>
+      <td>Media-friendly</td>
+      <td>Fairly Strong</td>
+      <td>Very Strong</td>
+      <td>9.38</td>
+      <td>8.29</td>
+      <td>8.93</td>
+      <td>11.30</td>
+      <td>10.58</td>
+      <td>10.12</td>
+      <td>31.6</td>
+      <td>9.55</td>
+      <td>10.77</td>
+      <td>10.25</td>
+      <td>8.6</td>
+    </tr>
+    <tr>
+      <td>Adil Aouchiche</td>
+      <td>M/AM (C)</td>
+      <td>FRA</td>
+      <td>20</td>
+      <td>Sunderland</td>
+      <td>£12M - £13.5M</td>
+      <td>£11,000 p/w</td>
+      <td>Fairly Ambitious</td>
+      <td>Media-friendly</td>
+      <td>Fairly Strong</td>
+      <td>Very Strong</td>
+      <td>8.70</td>
+      <td>7.60</td>
+      <td>8.91</td>
+      <td>11.36</td>
+      <td>11.70</td>
+      <td>9.58</td>
+      <td>30.5</td>
+      <td>10.70</td>
+      <td>11.71</td>
+      <td>11.40</td>
+      <td>7.1</td>
+    </tr>
+    <tr>
+      <td>Anthony Patterson</td>
+      <td>GK</td>
+      <td>ENG</td>
+      <td>23</td>
+      <td>Sunderland</td>
+      <td>£2.2M - £5.8M</td>
+      <td>£13,000 p/w</td>
+      <td>Spirited</td>
+      <td>Unflappable</td>
+      <td>Fairly Strong</td>
+      <td>Very Strong</td>
+      <td>8.96</td>
+      <td>7.82</td>
+      <td>8.90</td>
+      <td>9.94</td>
+      <td>9.96</td>
+      <td>9.57</td>
+      <td>17.8</td>
+      <td>7.11</td>
+      <td>7.63</td>
+      <td>8.60</td>
+      <td>31.7</td>
+    </tr>
+    <tr>
+      <td>Elliot Embleton</td>
+      <td>DM, M/AM (C)</td>
+      <td>ENG</td>
+      <td>24</td>
+      <td>Derby</td>
+      <td>£650K - £1.1M</td>
+      <td>£7,500 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Very Strong</td>
+      <td>Very Strong</td>
+      <td>8.82</td>
+      <td>7.61</td>
+      <td>8.87</td>
+      <td>10.67</td>
+      <td>11.04</td>
+      <td>9.86</td>
+      <td>29.0</td>
+      <td>9.29</td>
+      <td>10.26</td>
+      <td>9.70</td>
+      <td>7.1</td>
+    </tr>
+    <tr>
+      <td>Luís Semedo</td>
+      <td>ST (C)</td>
+      <td>POR</td>
+      <td>19</td>
+      <td>Sunderland</td>
+      <td>£5.4M - £6.6M</td>
+      <td>£5,000 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Reasonable</td>
+      <td>Very Strong</td>
+      <td>8.00</td>
+      <td>7.97</td>
+      <td>7.90</td>
+      <td>9.80</td>
+      <td>9.97</td>
+      <td>8.43</td>
+      <td>28.0</td>
+      <td>9.64</td>
+      <td>10.82</td>
+      <td>11.10</td>
+      <td>6.3</td>
+    </tr>
+    <tr>
+      <td>Jack Clarke</td>
+      <td>M (R), AM (RL)</td>
+      <td>ENG</td>
+      <td>22</td>
+      <td>Sunderland</td>
+      <td>£6.6M - £8.6M</td>
+      <td>£15,000 p/w</td>
+      <td>Spirited</td>
+      <td>Media-friendly</td>
+      <td>Reasonable</td>
+      <td>Very Strong</td>
+      <td>7.70</td>
+      <td>6.61</td>
+      <td>7.86</td>
+      <td>11.06</td>
+      <td>11.24</td>
+      <td>8.29</td>
+      <td>31.8</td>
+      <td>11.13</td>
+      <td>12.55</td>
+      <td>11.15</td>
+      <td>6.6</td>
+    </tr>
+    <tr>
+      <td>Alex Bass</td>
+      <td>GK</td>
+      <td>ENG</td>
+      <td>25</td>
+      <td>AFC Wimbledon</td>
+      <td>£14K - £70K</td>
+      <td>£4,500 p/w</td>
+      <td>Balanced</td>
+      <td>Level-headed</td>
+      <td>Very Weak</td>
+      <td>Very Strong</td>
+      <td>7.48</td>
+      <td>6.76</td>
+      <td>7.29</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>7.93</td>
+      <td>15.0</td>
+      <td>6.63</td>
+      <td>6.96</td>
+      <td>6.65</td>
+      <td>31.3</td>
+    </tr>
+    <tr>
+      <td>Jewison Bennette</td>
+      <td>AM (RL)</td>
+      <td>CRC</td>
+      <td>19</td>
+      <td>Sunderland</td>
+      <td>£4.1M - £5.8M</td>
+      <td>£1,700 p/w</td>
+      <td>Fairly Ambitious</td>
+      <td>Media-friendly</td>
+      <td>Very Strong</td>
+      <td>Reasonable</td>
+      <td>7.52</td>
+      <td>5.87</td>
+      <td>7.14</td>
+      <td>9.44</td>
+      <td>9.86</td>
+      <td>7.97</td>
+      <td>28.7</td>
+      <td>9.79</td>
+      <td>11.02</td>
+      <td>9.75</td>
+      <td>5.8</td>
+    </tr>
+    <tr>
+      <td>Nathan Bishop</td>
+      <td>GK</td>
+      <td>ENG</td>
+      <td>23</td>
+      <td>Sunderland</td>
+      <td>£120K - £850K</td>
+      <td>£6,000 p/w</td>
+      <td>Balanced</td>
+      <td>Media-friendly</td>
+      <td>Weak</td>
+      <td>Very Strong</td>
+      <td>7.78</td>
+      <td>6.95</td>
+      <td>6.52</td>
+      <td>7.94</td>
+      <td>7.02</td>
+      <td>7.37</td>
+      <td>15.4</td>
+      <td>5.15</td>
+      <td>5.75</td>
+      <td>6.45</td>
+      <td>26.2</td>
+    </tr>
+  </tbody>
+</table>
+<script>
+$(document).ready( function () {
+    // Find the first table and set its ID to 'player_table'
+    $('table').first().attr('id', 'player_table');
+
+    // Initialize DataTables on the table with pagination disabled
+    // and custom handling for NaN values during sorting
+    $('#player_table').DataTable({
+        "paging": false,
+        "columnDefs": [{
+            "targets": "_all",
+            "render": function (data, type, row) {
+                return data === 'NaN' || data === null ? '' : data;
+            }
+        }],
+        "order": [] // remove default ordering
+    });
+} );
+</script>
+</body>
+</html>
